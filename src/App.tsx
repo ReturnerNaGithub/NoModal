@@ -39,7 +39,7 @@ const privateKeyProvider = new EthereumPrivateKeyProvider({ config: { chainConfi
 
 const web3auth = new Web3AuthNoModal({
   clientId,
-  web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_MAINNET,
+  web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
   privateKeyProvider,
 });
 
@@ -185,8 +185,8 @@ function App() {
   );
 
   const unloggedInView = (
-    <button onClick={login} className="login">
-      Login
+    <button onClick={login} className= "custom-btn btn-12"><span>Click!</span><span>Login</span>
+    
     </button>
   );
 
